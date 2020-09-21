@@ -20,12 +20,6 @@
 
 `-npm run serve` or you can just open 'dist/index.html' file in your browser
 
-#  
-
-### Authors
-
-- PENCHEV VLADIMIR, DENIS KHISAMIEV
-
 # 
 
 ### Organisations
