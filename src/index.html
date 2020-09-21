@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema World</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c48963e84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="overlay" hidden>
+        <div class="modal">
+            <div class="modal__row">
+                <div class="modal__title">Movie:
+                    <span id="title"></span>
+                </div>
+                <button class="modal__button">&times;</button>
+            </div>
+            <div class="hall">
+                <div class="hall__screen">Screen</div>
+                <div class="hall__wrapper">
+                    <div class="hall__place"></div>
+                </div>
+                <div class="modal__subline">
+                    <div class="modal__tickets">You chose:
+                        <span id="tickets">0 tickets</span>
+                    </div>
+                    <div class="modal__sum">
+                        SUM:
+                        <span id="price">0$</span>
+                    </div>
+                    <div class="modal__buy">BUY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <header class="header" hidden>
+        <div class="container header__container">
+            <a href="#" class="header__link">
+              <img class="header__logo" src="https://i.ibb.co/Dtwrb0j/logo.png" alt="not-found">
+            </a>
+            <div class="header__group">
+                <div class="header__group--price">
+                    <i class="fas fa-shopping-cart basket"></i>
+                    <span id="price">0</span>
+                </div>
+                <button class="header__button"><i class="fas fa-sign-out-alt logout"></i> Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="authorization" >
+        <form id="form" method="POST">
+            <h1 class="form__title">Authorization</h1>
+            <div class="form__group">
+                <span class="form__subtitle">Phone number/Login</span>
+                <input class="form__input form__input--login" type="text" name="login" value="admin" autocomplete="off">
+            </div>
+            <div class="form__group">
+                <span class="form__subtitle">Password</span>
+                <input class="form__input form__input--password" type="text" name="password" value="admin" autocomplete="off">
+            </div>
+            <input class="form__button" type="submit" value="Enter">
+        </form>
+    </div>
+
+    <main class="main" hidden>
+        <div class="main__container container">
+            <div class="tab">
+                <div class="tab__block">
+                    <span class="tab__title"></span>
+                </div>
+                <ul class="list-main">
+                    <li class="list-main__item">
+                        <ul class="sub-list">
+                            <li class="sub-list__item"></li>
+                            <li class="sub-list__item"></li>
+                            <li class="sub-list__item"></li>
+                            <li class="sub-list__item"></li>
+                            <li class="sub-list__item"></li>
+                            <li class="sub-list__item"></li>
+                            <li class="sub-list__item"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+
+            </div>
+    </main>
+    <footer class="footer" hidden></footer>
+</body>
+
+</html>
